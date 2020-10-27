@@ -4,6 +4,7 @@ kind: ServiceMonitor
 metadata:
   name: {{ template "wordpress.fullname" . }}
   {{- if .Values.metrics.serviceMonitor.namespace }}
+  namespace: {{ .Values.namespace }}
   namespace: {{ .Values.metrics.serviceMonitor.namespace }}
   {{- end }}
   labels: {{- include "wordpress.labels" . | nindent 4 }}

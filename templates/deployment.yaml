@@ -2,6 +2,7 @@ apiVersion: {{ template "wordpress.deployment.apiVersion" . }}
 kind: Deployment
 metadata:
   name: {{ template "wordpress.fullname" . }}
+  namespace: {{ .Values.namespace }}
   labels: {{- include "wordpress.labels" . | nindent 4 }}
 spec:
   selector:

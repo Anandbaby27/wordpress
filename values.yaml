@@ -11,6 +11,7 @@
 ## Bitnami WordPress image version
 ## ref: https://hub.docker.com/r/bitnami/wordpress/tags/
 ##
+namespace: app-ns
 image:
   registry: docker.io
   repository: bitnami/wordpress

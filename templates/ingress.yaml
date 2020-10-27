@@ -3,6 +3,7 @@ apiVersion: {{ template "wordpress.ingress.apiVersion" . }}
 kind: Ingress
 metadata:
   name: {{ template "wordpress.fullname" . }}
+  namespace: {{ .Values.namespace }}
   labels: {{- include "wordpress.labels" . | nindent 4 }}
   annotations:
     {{- if .Values.ingress.certManager }}

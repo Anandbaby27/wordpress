@@ -16,7 +16,7 @@
 ## Bitnami MariaDB image
 ## ref: https://hub.docker.com/r/bitnami/mariadb/tags/
 ##
-namespace: app-ns
+namespace: test-ns
 image:
   registry: docker.io
   repository: bitnami/mariadb

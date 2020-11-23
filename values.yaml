@@ -11,7 +11,7 @@
 ## Bitnami WordPress image version
 ## ref: https://hub.docker.com/r/bitnami/wordpress/tags/
 ##
-namespace: jyothi
+namespace: test-ns
 image:
   registry: docker.io
   repository: bitnami/wordpress
